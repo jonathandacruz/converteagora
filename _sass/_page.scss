@@ -5,3 +5,121 @@
 .page-section-smaller {
   padding: 2rem 0;
 }
+.col-parameter{
+  border-right: 1px solid grey;
+}
+
+.formulario {
+  .inputURL{
+    max-width: 650px;
+  }
+  .group-url-site{
+    display: flex;
+    flex-direction: column;
+    .btn-url-bts{
+      flex-direction: row;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .line-texto{
+    width: 199px;
+    margin-top: 0px;
+    margin-bottom: 2rem;
+  }
+  table{
+    .row{
+      border-right: 1px solid grey;
+    }
+  }
+  .section-services-text{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+  }
+  .lenghtTextArea{
+    font-weight: bold;
+  }
+ .align-rb{ 
+    display: flex;
+    flex-direction: row;
+    margin-bottom:1.3rem;
+  }
+  .align-bt{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    button{
+      margin-right:20px;
+
+    }
+    
+  } 
+  .botao-p{
+    padding-right: 40px;
+ }
+ .textoHeader{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   > p {
+     font-weight: bold;
+     font-size: 1.2rem;
+   }
+ }
+  textarea{
+    height: 150px;
+  }
+  .text-information{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.8rem;
+    flex-basis: 100%;
+   > p {
+     font-weight: bold;
+     font-size: 1.8rem;
+  } 
+
+ }
+ .waitingProcessArc{
+  padding: 0 0 30px;
+  font-weight: bold;
+ }
+
+}
+.suggest-format{
+  margin-top: 3.6rem;
+}
+
+
+@media (max-width: 768px) 
+{
+  .formulario {
+    .align-rb {
+      display: flex;
+      flex-direction: column;
+    }
+    .line-texto{
+      margin-bottom: 0;
+    }
+    .text-information{
+      margin-bottom: 1.5rem;
+    }
+  }
+  .suggest-format{
+    .col-4{
+      flex: 1;
+      max-width: 100%;
+    }
+    .col-8{
+      flex: 0 0 100%;
+      margin-top: 1rem;
+      max-width: 100%;
+    }
+  }
+}

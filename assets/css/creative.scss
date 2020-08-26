@@ -362,6 +362,8 @@ template {
   display: none !important;
 }
 
+
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
@@ -551,6 +553,9 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+//Personalizações Pos template
+
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -571,6 +576,7 @@ pre code {
     max-width: 1140px;
   }
 }
+
 
 .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
@@ -3060,6 +3066,7 @@ input[type=button].btn-block {
   }
 }
 @media (min-width: 1200px) {
+
   .dropdown-menu-xl-left {
     right: auto;
     left: 0;
@@ -9656,6 +9663,12 @@ button.bg-dark:focus {
 
 .text-center {
   text-align: center !important;
+  h3{
+    color: #343a40;
+    font-weight: bold;
+  }
+
+
 }
 
 @media (min-width: 576px) {
@@ -9775,7 +9788,7 @@ a.text-success:hover, a.text-success:focus {
 }
 
 .text-info {
-  color: #17a2b8 !important;
+  color: #1884A8 !important;
 }
 
 a.text-info:hover, a.text-info:focus {

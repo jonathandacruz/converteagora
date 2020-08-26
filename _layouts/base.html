@@ -10,6 +10,25 @@
   <title>{% assign title_is_not_empty = page.title | is_not_empty %}{% if title_is_not_empty %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <script>
+    // Set a same-site cookie for first-party contexts
+    document.cookie = 'cookie1=value1; SameSite=Lax';
+    // Set a cross-site cookie for third-party contexts
+    document.cookie = 'cookie2=value2; SameSite=None; Secure';
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176425478-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-176425478-1');
+  </script>
+
+
+
   <!-- Font Awesome icons (free version)-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
   <!-- Google fonts-->
@@ -19,8 +38,19 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="assets/css/creative.css" rel="stylesheet">
+  
   <!-- Custom CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+  window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+  d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+  _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+  $.src="https://v2.zopim.com/?53tTagfdZgm2FXprcGKxe02mXe6BRur6";z.t=+new Date;$.
+  type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+  </script>
+  <!--End of Zendesk Chat Script-->
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,8 +73,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <!-- Core theme JS-->
-
   <script src="assets/js/creative.min.js"></script>
+  <!--<script src="assets/js/creative.min.js"></script> -->
 </body>
 
 </html>
