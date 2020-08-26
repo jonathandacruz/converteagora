@@ -38,7 +38,7 @@ background_image: url('assets/img/backgrounds/text_header_img.jpg')
 
   <div class="align-bt">
     <button id="executeFunction" type="button" class="btn btn-secondary">Executar</button>
-    <button id="executeFunction" type="button" class="btn btn-secondary">Copiar</button>
+    <button id="executeFunctionCopy" type="button" class="btn btn-secondary">Copiar</button>
   </div>
 </form>
 

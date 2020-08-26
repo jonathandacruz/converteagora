@@ -11,6 +11,7 @@ background_image: url('assets/img/backgrounds/text_header_img.jpg')
     <hr class="divider line-texto">
 </div>
 
+
 <form method="post">
   <div class="form-group input-group mb-3 group-url-site ">
     <div class="btn-url-bts">
@@ -22,6 +23,10 @@ background_image: url('assets/img/backgrounds/text_header_img.jpg')
     <div class="text-information"> 
       <div id="waitingProcessArc" class="waitingProcessArc"> </div>
     </div>
+    <div class="text-information"> 
+       <div class="waitingProcessArc"> Utilize o link completo com o Http://www.seusite.com ou Https://seusite.com.br</div>
+    </div>   
+
   </div>
 
   <div class="text-information ">

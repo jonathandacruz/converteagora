@@ -154,14 +154,14 @@
 
       $.ajax({
           type: 'GET',
-          url: 'https://converteagora-api-url.herokuapp.com/api/render?url=http://' + sendInput + sendArchiveName + pageRanges + paperFormat + valPdfWidth + valPdfHeight + valPdfMarginTop + valPdfMarginRight + valPdfMarginBottom + valPdfMarginLeft,
+          url: 'https://converteagora-api-url.herokuapp.com/api/render?url=' + sendInput + sendArchiveName + pageRanges + paperFormat + valPdfWidth + valPdfHeight + valPdfMarginTop + valPdfMarginRight + valPdfMarginBottom + valPdfMarginLeft,
           //
           success: function (msg) {
               //Call Api When Sucess
               counter = 0;
               $("#waitingProcessArc").text('Tudo certo, seu download começará em breve');
               $("#waitingProcessArc").css('color', 'green');
-              window.location = 'https://converteagora-api-url.herokuapp.com/api/render?url=http://'+ sendInput +sendArchiveName + pageRanges + paperFormat + valPdfWidth + valPdfHeight + valPdfMarginTop + valPdfMarginRight +valPdfMarginBottom + valPdfMarginLeft;
+              window.location = 'https://converteagora-api-url.herokuapp.com/api/render?url='+ sendInput +sendArchiveName + pageRanges + paperFormat + valPdfWidth + valPdfHeight + valPdfMarginTop + valPdfMarginRight +valPdfMarginBottom + valPdfMarginLeft;
 
           },
           error: function (request, status, error) {
@@ -203,7 +203,10 @@
         });
     };
 
-
+    $("#executeFunctionCopy").click(function(){
+      $("#textResult").select();
+      document.execCommand('copy');
+  });
    
   
 
